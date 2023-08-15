@@ -14,6 +14,7 @@ let condicion = 3
 let cont=0
 
 while (bg){
+    
     let entrada = parseInt(prompt("Ingrese un dato mi hermano"))
     cont++
     console.log(edad(entrada))

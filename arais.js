@@ -1,3 +1,4 @@
+let j=[];
 
 function recorer(listapu,valorfijopu){
 let resultadopu=[]
@@ -11,6 +12,20 @@ let resultadopu=[]
     }
     return resultadopu
 }
-let listapape=[1,2,3,4,5,6,7,8,9];
+function llenar(cantidad){
 
-console.log(recorer(listapape,10))
+    for(h=0;h<cantidad;h++){
+        entrada = parseInt(prompt("Ingrese un dato mi hermano"))
+        j.push(entrada)
+    }
+    return j
+
+}
+
+tar=parseInt(prompt("ingresar valor a verificar"))
+can=parseInt(prompt("Ingresar cantidad de datos mi hermano"))
+
+
+// console.log(llenar(can))
+
+console.log(recorer(llenar(can),tar))
