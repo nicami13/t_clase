@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Texto Numerada</title>
+</head>
+<body>
+    <h2>MOSTRAR DATO</h2>
+    <ol id="miLista" start="0">
+    </ol>
+
+    <button id="agregarElemento">Agregar Elemento</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const miLista = document.getElementById('miLista');
+            const agregarElementoBtn = document.getElementById('agregarElemento');
+            let contador = 1;
+            agregarElementoBtn.addEventListener('click', function() {
+                const nuevoElemento = document.createElement('li');
+                nuevoElemento.textContent = String(Math.floor( Math.random()*10))+ contador;
+                miLista.appendChild(nuevoElemento);
+                contador++;
+            });
+        });
+    </script>
+</body>
+</html>
